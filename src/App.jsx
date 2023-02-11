@@ -1,16 +1,8 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Characters from './pages/Characters'
-import Locations from './pages/Locations'
-import Episodes from './pages/Episodes'
-import SingleCharacter from './components/SingleCharacter'
-import SingleLocation from './components/SingleLocation'
-import SingleEpisode from './components/SingleEpisode'
-import Footer from './components/Footer'
-import Hero from './pages/Hero'
+import {Hero, Characters, Locations, Episodes} from './pages/index'
+import {SingleCharacter, SingleLocation, SingleEpisode, Navbar, Sidebar, Footer} from './components/index'
 import { createTheme, ThemeProvider, useMediaQuery } from '@mui/material'
-import Sidebar from './components/Sidebar'
 
 const darkTheme = createTheme({
   palette: {

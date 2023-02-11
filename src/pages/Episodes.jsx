@@ -1,7 +1,8 @@
 import { Box, Button, ButtonGroup, CircularProgress, Grid, ImageList, ImageListItem, ImageListItemBar, Link, Stack, Typography } from '@mui/material'
 import React, { useContext } from 'react'
 import EpisodesContext from '../context/EpisodesContext'
-import rickandmorty from '../uses/rick_morty.jpeg'
+import {rickandmorty, seasonone, seasontwo, seasonthree, seasonfour} from '../uses/index'
+
 
 const Episodes = () => {
   const { episodes, loading, pageNumber, nextPage, previousPage } = useContext(EpisodesContext)
@@ -31,9 +32,10 @@ const Episodes = () => {
                 <Link href={`/episodes/${id}`}>
                   <ImageListItem key={id}>
                     <img
-                      src={rickandmorty}
+                      src={episode.startsWith('S01') ? seasonone : episode.startsWith('S02') ? seasontwo : episode.startsWith('S03') ? seasonthree : episode.startsWith('S04') ? seasonfour : rickandmorty}
                       alt={name}
                       loading="lazy"
+                      style={{ width: 250, height: 350 }}
                     />
                     <ImageListItemBar
                       sx={{

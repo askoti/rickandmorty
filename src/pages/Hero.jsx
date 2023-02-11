@@ -2,10 +2,9 @@ import { Box, Button, Container, Typography } from '@mui/material'
 import React from 'react'
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import HeroImage from '../uses/hero.jpeg'
-import Title from '../uses/title.png'
+import { HeroImage, Title } from '../uses';
+import { HeroCards } from '../components';
 import { follow, joinus, unique, welcome } from '../heroData'
-import HeroCards from '../components/HeroCards'
 
 
 const styles = {

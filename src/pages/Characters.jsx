@@ -69,7 +69,7 @@ const Characters = () => {
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            margin='15px'
+            marginY='15px'
             >
                 <ButtonGroup variant="outlined" aria-label="pages" size='large' color='primary'>
                     <Button onClick={() => previousPage()}>Previous</Button>
