@@ -15,7 +15,7 @@ const darkTheme = createTheme({
 
 
 function App() {
-  const matches = useMediaQuery('(min-width:700px)');
+  const matches = useMediaQuery('(min-width:750px)');
 
   return (
     <ThemeProvider theme={darkTheme}>
